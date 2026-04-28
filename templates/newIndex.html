@@ -1,0 +1,228 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- SLIDER SECTION -->
+<div class="slider movie-items">
+    <div class="container">
+        <div class="row">
+            <div class="social-link">
+                <p>Follow us: </p>
+                {% for link in social_links %}
+                <a href="{{ link.url }}"><i class="{{ link.icon_class }}"></i></a>
+                {% endfor %}
+            </div>
+            <div class="slick-multiItemSlider">
+                {% for slide in sliders %}
+                <div class="movie-item">
+                    <div class="mv-img">
+                        <a href="{{ slide.anchor_url }}">
+                            <img src="{{ slide.image_src }}" alt="" width="{{ slide.image_width }}" height="{{ slide.image_height }}">
+                        </a>
+                    </div>
+                    <div class="title-in">
+                        <div class="cate">
+                            <span><a href="#">{{ slide.movie_genre }}</a></span>
+                        </div>
+                        <h6><a href="#">{{ slide.movie_title }}</a></h6>
+                        <p><i class="ion-android-star"></i><span>{{ slide.lower_rating }}</span> /{{ slide.upper_rating }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MOVIE LISTING SECTION -->
+<div class="movie-items">
+    <div class="container">
+        <div class="row ipad-width">
+            <div class="col-md-8">
+
+                <!-- IN THEATER -->
+                <div class="title-hd">
+                    <h2>in theater</h2>
+                    <a href="#" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
+                </div>
+                <div class="tabs">
+                    <ul class="tab-links">
+                        <li class="active"><a href="#tab1">#Popular</a></li>
+                        <li><a href="#tab2">#Coming soon</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab1" class="tab active">
+                            <div class="row">
+                                <div class="slick-multiItem">
+                                    <!-- THEATER (placeholder) -->
+                                    <p style="color:gray;">[ Missing ]</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab2" class="tab">
+                            <div class="row">
+                                <div class="slick-multiItem">
+                                    <!-- THEATER (placeholder) -->
+                                    <p style="color:gray;">[ Missing ]</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ON TV -->
+                <div class="title-hd">
+                    <h2>on tv</h2>
+                    <a href="#" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
+                </div>
+                <div class="tabs">
+                    <ul class="tab-links-2">
+                        <li class="active"><a href="#tab21">#Popular</a></li>
+                        <li><a href="#tab22">#Coming soon</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab21" class="tab active">
+                            <div class="row">
+                                <div class="slick-multiItem">
+                                    <!-- TV (placeholder)-->
+                                    <p style="color:gray;">[ Missing ]</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab22" class="tab">
+                            <div class="row">
+                                <div class="slick-multiItem">
+                                    <!-- TV (placeholder) -->
+                                    <p style="color:gray;">[ Missing ]</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- SIDEBAR -->
+            <div class="col-md-4">
+                <div class="sidebar">
+
+                    <!-- AD -->
+                    <div class="ads">
+                        {% for ad in ads %}
+                            {% if ad.section == 'sidebar' %}
+                            <img src="{{ ad.img_src }}" alt="" width="{{ ad.img_width }}" height="{{ ad.img_height }}">
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+
+                    <!-- CELEBRITIES -->
+                    <div class="celebrities">
+                        <h4 class="sb-title">Spotlight Celebrities</h4>
+                        {% for celeb in celebrities %}
+                        <div class="celeb-item">
+                            <a href="{{ celeb.anchor_url }}">
+                                <img src="{{ celeb.celebrity_url }}" alt="" width="{{ celeb.img_width }}" height="{{ celeb.img_height }}">
+                            </a>
+                            <div class="celeb-author">
+                                <h6><a href="#">{{ celeb.celebrity_name }}</a></h6>
+                                <span>{{ celeb.celebrity_type }}</span>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        <a href="#" class="btn">See all celebrities <i class="ion-ios-arrow-right"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- TRAILERS -->
+<div class="trailers">
+    <div class="container">
+        <div class="row ipad-width">
+            <div class="col-md-12">
+                <div class="title-hd">
+                    <h2>in theater</h2>
+                    <a href="#" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
+                </div>
+                <div class="videos">
+                    <div class="slider-for-2 video-ft">
+                        {% for trailer in trailers %}
+                        <div>
+                            <iframe class="item-video" src="#" data-src="{{ trailer.trailer_URL }}"></iframe>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="slider-nav-2 thumb-ft">
+                        <!-- TRAILER ITEM -->
+                        <p style="color:gray;">[ Missing ]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- NEWS -->
+<div class="latestnew">
+    <div class="container">
+        <div class="row ipad-width">
+            <div class="col-md-8">
+
+                <!-- AD -->
+                <div class="ads">
+                    {% for ad in ads %}
+                        {% if ad.section == 'news' %}
+                        <img src="{{ ad.img_src }}" alt="" width="{{ ad.img_width }}" height="{{ ad.img_height }}">
+                        {% endif %}
+                    {% endfor %}
+                </div>
+
+                <div class="title-hd">
+                    <h2>Latest news</h2>
+                </div>
+
+                <!-- NEWS (placeholder) -->
+                <p style="color:gray;">[ Missing ]</p>
+
+                <div class="morenew">
+                    <div class="title-hd">
+                        <h3>More news on Blockbuster</h3>
+                        <a href="#" class="viewall">See all Movies news <i class="ion-ios-arrow-right"></i></a>
+                    </div>
+                    <div class="more-items">
+                        <div class="left">
+                            <!-- NEWS (placeholder) -->
+                            <p style="color:gray;">[ Missing ]</p>
+                        </div>
+                        <div class="right">
+                            <!-- NEWS (placeholder)-->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- TWEETS -->
+            <div class="col-md-4">
+                <div class="sidebar">
+                    <div class="sb-twitter sb-it">
+                        <h4 class="sb-title">Tweet to us</h4>
+                        <div class="slick-tw">
+                            <!-- TWEETS (placeholder) -->
+                            <p style="color:gray;">[ Missing ]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+
+{% endblock %}
