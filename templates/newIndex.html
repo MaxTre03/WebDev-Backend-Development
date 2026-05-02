@@ -56,7 +56,7 @@
                             <div class="row">
                                 <div class="slick-multiItem">
                                     <!-- THEATER  -->
-                                    {% for movie in movies_theater %}
+                                    {% for movie in movies_theater_popular %}
                                         <div class="slide-it">
                                             <div class="movie-item">
                                                 <div class="mv-img">
@@ -84,7 +84,7 @@
                             <div class="row">
                                 <div class="slick-multiItem">
                                     <!-- THEATER  -->
-                                    {% for movie in movies_theater %}
+                                    {% for movie in movies_theater_coming %}
                                         <div class="slide-it">
                                             <div class="movie-item">
                                                 <div class="mv-img">
@@ -126,7 +126,7 @@
                             <div class="row">
                                 <div class="slick-multiItem">
                                     <!-- TV -->
-                                    {% for movie in movies_tv %}
+                                    {% for movie in movies_tv_popular %}
                                         <div class="slide-it">
                                             <div class="movie-item">
                                                 <div class="mv-img">
@@ -154,7 +154,7 @@
                             <div class="row">
                                 <div class="slick-multiItem">
                                     <!-- TV -->
-                                    {% for movie in movies_tv %}
+                                    {% for movie in movies_tv_coming %}
                                         <div class="slide-it">
                                             <div class="movie-item">
                                                 <div class="mv-img">
@@ -275,7 +275,7 @@
                     <h2>Latest news</h2>
                 </div>
                 <!-- News -->
-                {% for item in news %}
+                {% for item in news_main %}
                     <div class="blog-item-style-1">
                         <img src="{% static item.img_src %}" alt="{{ item.img_alt }}" width="{{ item.img_width }}" height="{{ item.img_height }}">
                         <div class="blog-it-infor">
@@ -285,7 +285,31 @@
                         </div>
                     </div>
                 {% endfor %}
+                <div class="morenew">
+                    <div class="title-hd">
+                        <h3>More news on Blockbuster</h3>
+                        <a href="#" class="viewall">See all Movies news<i class="ion-ios-arrow-right"></i></a>
+                    </div>
+                    <div class="more-items">
+                        <div class="left">
+                            {% for item in news_left %}
+                            <div class="more-it">
+                                <h6><a href="#">{{ item.title }}</a></h6>
+                                <span class="time">{{ item.time }}</span>
+                            </div>
+                            {% endfor %}
+                        </div>
 
+                        <div class="right">
+                            {% for item in news_right %}
+                            <div class="more-it">
+                                <h6><a href="#">{{ item.title }}</a></h6>
+                                <span class="time">{{ item.time }}</span>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- TWEETS -->

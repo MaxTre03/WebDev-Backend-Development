@@ -12,14 +12,16 @@ def home(request):
         'celebrities': Celebrity.objects.all(),
         'trailers': Trailer.objects.all(),
         "trailer_items": TrailerItem.objects.all(),
-        "news": News.objects.all(),
+        "news_main": News.objects.filter(section="main"),
+        "news_left": News.objects.filter(section="left"),
+        "news_right": News.objects.filter(section="right"),
         "tweets": Tweet.objects.all(),
-        "movies_theater": MovieTheater.objects.all(),
-        "movies_tv": MovieTv.objects.all(),
+        "movies_theater_popular": MovieTheater.objects.filter(type="popular"),
+        "movies_theater_coming": MovieTheater.objects.filter(type="coming"),
+        "movies_tv_popular": MovieTv.objects.filter(type="popular"),
+        "movies_tv_coming": MovieTv.objects.filter(type="coming"),
     }
     return render(request, 'newIndex.html', context)
-
-
 
 
 
