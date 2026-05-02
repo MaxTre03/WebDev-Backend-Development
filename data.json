@@ -1,30 +1,5 @@
 [
 {
-  "model": "auth.user",
-  "fields": {
-    "password": "pbkdf2_sha256$600000$FHsBjBfYcvJc4Z1efvXUZg$RzpfK0yPnB49wRZGq7EpZx1WzCek/rF5M0vtk8dmjhM=",
-    "last_login": "2026-04-28T19:55:48.996Z",
-    "is_superuser": true,
-    "username": "Slg4890",
-    "first_name": "",
-    "last_name": "",
-    "email": "ryan.birge01@utrgv.edu",
-    "is_staff": true,
-    "is_active": true,
-    "date_joined": "2026-04-28T19:54:53.201Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "pcdkccpf3350w53l7zds2qntxdkxt7yf",
-  "fields": {
-    "session_data": ".eJxVjEEOwiAQRe_C2pChA8K4dO8ZyFCmUjU0Ke3KeHfbpAvd_vfef6vI61Li2mSOY1YXZdTpd0vcP6XuID-43ifdT3WZx6R3RR-06duU5XU93L-Dwq1sNQQYMhkTkINP4tgSeGRhtoHcQHgmARTqCDcxEVjojCPPTIg5BfX5AsnCNyA:1wHoX7:eM5TP9QPoJVLwvKgzz-7RqISYZxdlAAd39ceN0NUf3Y",
-    "expire_date": "2026-05-12T19:55:49.000Z"
-  }
-},
-{
   "model": "myapp.slider",
   "pk": 1,
   "fields": {
@@ -299,6 +274,54 @@
   }
 },
 {
+  "model": "myapp.traileritem",
+  "pk": 3,
+  "fields": {
+    "img_src": "images/uploads/trailer2.jpg",
+    "img_alt": "planes",
+    "img_width": 4096,
+    "img_height": 2737,
+    "description": "Planes",
+    "duration": "4:55"
+  }
+},
+{
+  "model": "myapp.traileritem",
+  "pk": 4,
+  "fields": {
+    "img_src": "images/uploads/trailer3.png",
+    "img_alt": "The Revenant",
+    "img_width": 4096,
+    "img_height": 2737,
+    "description": "The Revenant",
+    "duration": "35:00"
+  }
+},
+{
+  "model": "myapp.traileritem",
+  "pk": 5,
+  "fields": {
+    "img_src": "images/uploads/trailer4.png",
+    "img_alt": "Beauty and the Beast",
+    "img_width": 4096,
+    "img_height": 2737,
+    "description": "Beauty and the Beast",
+    "duration": "3:20"
+  }
+},
+{
+  "model": "myapp.traileritem",
+  "pk": 6,
+  "fields": {
+    "img_src": "images/uploads/trailer5.jpg",
+    "img_alt": "Its about Family",
+    "img_width": 4096,
+    "img_height": 2737,
+    "description": "Its about Family",
+    "duration": "0:15"
+  }
+},
+{
   "model": "myapp.news",
   "pk": 1,
   "fields": {
@@ -308,7 +331,7 @@
     "img_width": 170,
     "img_height": 250,
     "title": "Brie Larson to star in new Amazon film",
-    "content": "Amazon Studios has acquired a new project starring Brie Larson as the first female presidential candidate...",
+    "content": "Amazon Studios has acquired a new project starring Brie Larson as the first female presidential candidate... which is sad because it shouldnt have take this long for a women president.",
     "time": "13 hours ago"
   }
 },
@@ -321,7 +344,7 @@
     "img_alt": "1",
     "img_width": 1,
     "img_height": 1,
-    "title": "Michael Shannon Frontrunner to play Cable in “Deadpool 2”",
+    "title": "Michael Shannon Frontrunner to play Cable in �Deadpool 2�",
     "content": "1",
     "time": "12 hrs ago"
   }
@@ -338,6 +361,34 @@
     "title": "Jensen Ackles reprises his role as Soldier Boy in the fifth season of \"The Boys\"",
     "content": "1",
     "time": "6 hours ago"
+  }
+},
+{
+  "model": "myapp.news",
+  "pk": 4,
+  "fields": {
+    "section": "left",
+    "img_src": "1",
+    "img_alt": "1",
+    "img_width": 1,
+    "img_height": 1,
+    "title": "WB is selling everything even though they dont need to. Can you smell whats fishy with this?",
+    "content": "1",
+    "time": "434 hrs ago"
+  }
+},
+{
+  "model": "myapp.news",
+  "pk": 5,
+  "fields": {
+    "section": "right",
+    "img_src": "1",
+    "img_alt": "1",
+    "img_width": 1,
+    "img_height": 1,
+    "title": "Why is Marvel messing up at every possible chance, and will spiderman save them?",
+    "content": "1",
+    "time": "1 min ago"
   }
 },
 {
@@ -407,6 +458,111 @@
   }
 },
 {
+  "model": "myapp.movietheater",
+  "pk": 4,
+  "fields": {
+    "type": "popular",
+    "img_src": "images/uploads/mv-item12.jpg",
+    "img_width": 185,
+    "img_height": 284,
+    "anchor_url": "#",
+    "movie_genre": "Romcom",
+    "movie_title": "La La Land",
+    "lower_rating": "8.5",
+    "upper_rating": "10"
+  }
+},
+{
+  "model": "myapp.movietheater",
+  "pk": 5,
+  "fields": {
+    "type": "coming",
+    "img_src": "images/uploads/mv-item11.jpg",
+    "img_width": 185,
+    "img_height": 284,
+    "anchor_url": "#",
+    "movie_genre": "Horror",
+    "movie_title": "Stranger Things",
+    "lower_rating": "7",
+    "upper_rating": "10"
+  }
+},
+{
+  "model": "myapp.movietheater",
+  "pk": 6,
+  "fields": {
+    "type": "coming",
+    "img_src": "images/uploads/mv-item10.jpg",
+    "img_width": 185,
+    "img_height": 284,
+    "anchor_url": "#",
+    "movie_genre": "Action",
+    "movie_title": "Scepctre",
+    "lower_rating": "8.2",
+    "upper_rating": "10"
+  }
+},
+{
+  "model": "myapp.movietheater",
+  "pk": 7,
+  "fields": {
+    "type": "coming",
+    "img_src": "images/uploads/mv-item8.jpg",
+    "img_width": 185,
+    "img_height": 284,
+    "anchor_url": "#",
+    "movie_genre": "Action",
+    "movie_title": "Southpaw",
+    "lower_rating": "8.1",
+    "upper_rating": "10"
+  }
+},
+{
+  "model": "myapp.movietheater",
+  "pk": 8,
+  "fields": {
+    "type": "popular",
+    "img_src": "images/uploads/mv-item7.jpg",
+    "img_width": 185,
+    "img_height": 284,
+    "anchor_url": "#",
+    "movie_genre": "Sci-fi",
+    "movie_title": "Not the Martian",
+    "lower_rating": "5",
+    "upper_rating": "10"
+  }
+},
+{
+  "model": "myapp.movietheater",
+  "pk": 9,
+  "fields": {
+    "type": "popular",
+    "img_src": "images/uploads/mv-item6.jpg",
+    "img_width": 185,
+    "img_height": 284,
+    "anchor_url": "#",
+    "movie_genre": "Romance",
+    "movie_title": "Blue Velvet",
+    "lower_rating": "?",
+    "upper_rating": "10"
+  }
+},
+{
+  "model": "myapp.movietheater",
+  "pk": 10,
+  "fields": {
+    "type": "coming",
+    "img_src": "images/uploads/mv-item4.jpg",
+    "img_width": 185,
+    "img_height": 284,
+    "anchor_url": "#",
+    "movie_genre": "Horror",
+    "movie_title": "The Walk",
+    "lower_rating": "7.2",
+    "upper_rating": "10"
+  }
+},
+{
   "model": "myapp.movietv",
   "pk": 1,
   "fields": {
@@ -422,1065 +578,138 @@
   }
 },
 {
-  "model": "admin.logentry",
-  "pk": 1,
-  "fields": {
-    "action_time": "2026-04-28T20:39:20.761Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "slider"
-    ],
-    "object_id": "1",
-    "object_repr": "Oblivion",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
+  "model": "myapp.movietv",
   "pk": 2,
   "fields": {
-    "action_time": "2026-04-28T20:40:19.202Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "slider"
-    ],
-    "object_id": "1",
-    "object_repr": "Oblivion",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Image width\", \"Image height\"]}}]"
+    "type": "coming",
+    "img_src": "images/uploads/mv-item3.jpg",
+    "img_width": 185,
+    "img_height": 284,
+    "anchor_url": "#",
+    "movie_genre": "Action",
+    "movie_title": "Die hard",
+    "lower_rating": "8.7",
+    "upper_rating": "10"
   }
 },
 {
-  "model": "admin.logentry",
+  "model": "myapp.movietv",
   "pk": 3,
   "fields": {
-    "action_time": "2026-04-28T20:41:56.776Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "slider"
-    ],
-    "object_id": "1",
-    "object_repr": "Oblivion",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Image width\", \"Image height\"]}}]"
+    "type": "coming",
+    "img_src": "images/uploads/mv-item2.jpg",
+    "img_width": 185,
+    "img_height": 284,
+    "anchor_url": "#",
+    "movie_genre": "Drama",
+    "movie_title": "Revanant",
+    "lower_rating": "6.7",
+    "upper_rating": "10"
   }
 },
 {
-  "model": "admin.logentry",
+  "model": "myapp.movietv",
   "pk": 4,
   "fields": {
-    "action_time": "2026-04-28T20:43:11.936Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "slider"
-    ],
-    "object_id": "1",
-    "object_repr": "Oblivion",
-    "action_flag": 2,
-    "change_message": "[]"
+    "type": "popular",
+    "img_src": "images/uploads/mv-item1.jpg",
+    "img_width": 185,
+    "img_height": 284,
+    "anchor_url": "#",
+    "movie_genre": "Sci-fi",
+    "movie_title": "Interstellar",
+    "lower_rating": "10",
+    "upper_rating": "10"
   }
 },
 {
-  "model": "admin.logentry",
+  "model": "myapp.movietv",
   "pk": 5,
   "fields": {
-    "action_time": "2026-04-28T20:45:57.717Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "slider"
-    ],
-    "object_id": "2",
-    "object_repr": "Into the Wild",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "type": "popular",
+    "img_src": "images/uploads/mv-it11.jpg",
+    "img_width": 185,
+    "img_height": 284,
+    "anchor_url": "#",
+    "movie_genre": "Action",
+    "movie_title": "Marvel Slop",
+    "lower_rating": "8.2",
+    "upper_rating": "10"
   }
 },
 {
-  "model": "admin.logentry",
+  "model": "myapp.movietv",
   "pk": 6,
   "fields": {
-    "action_time": "2026-04-28T20:47:16.449Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "slider"
-    ],
-    "object_id": "3",
-    "object_repr": "Blade Runner 2049",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "type": "coming",
+    "img_src": "images/uploads/mv-item7.jpg",
+    "img_width": 185,
+    "img_height": 284,
+    "anchor_url": "#",
+    "movie_genre": "Sci-fi",
+    "movie_title": "Martian Better",
+    "lower_rating": "5",
+    "upper_rating": "10"
   }
 },
 {
-  "model": "admin.logentry",
+  "model": "myapp.movietv",
   "pk": 7,
   "fields": {
-    "action_time": "2026-04-28T20:47:24.644Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "slider"
-    ],
-    "object_id": "2",
-    "object_repr": "Into the Wild",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Anchor url\"]}}]"
+    "type": "coming",
+    "img_src": "images/uploads/mv-item6.jpg",
+    "img_width": 185,
+    "img_height": 284,
+    "anchor_url": "#",
+    "movie_genre": "Romcom",
+    "movie_title": "What is this",
+    "lower_rating": "6.7",
+    "upper_rating": "6.7"
   }
 },
 {
-  "model": "admin.logentry",
+  "model": "myapp.movietv",
   "pk": 8,
   "fields": {
-    "action_time": "2026-04-28T20:49:37.970Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "slider"
-    ],
-    "object_id": "4",
-    "object_repr": "Mulholland Drive",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "type": "coming",
+    "img_src": "images/uploads/mv-item9.jpg",
+    "img_width": 185,
+    "img_height": 284,
+    "anchor_url": "#",
+    "movie_genre": "Horror",
+    "movie_title": "Woody",
+    "lower_rating": "2",
+    "upper_rating": "5"
   }
 },
 {
-  "model": "admin.logentry",
+  "model": "myapp.movietv",
   "pk": 9,
   "fields": {
-    "action_time": "2026-04-28T20:53:00.870Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "slider"
-    ],
-    "object_id": "5",
-    "object_repr": "Oblivion",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "type": "popular",
+    "img_src": "images/uploads/mv4.jpg",
+    "img_width": 185,
+    "img_height": 284,
+    "anchor_url": "#",
+    "movie_genre": "Horror",
+    "movie_title": "Looked cool",
+    "lower_rating": "?",
+    "upper_rating": "?"
   }
 },
 {
-  "model": "admin.logentry",
+  "model": "myapp.movietv",
   "pk": 10,
   "fields": {
-    "action_time": "2026-04-28T20:55:11.666Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "slider"
-    ],
-    "object_id": "6",
-    "object_repr": "Mulholland Drive",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 11,
-  "fields": {
-    "action_time": "2026-04-28T20:55:51.718Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "slider"
-    ],
-    "object_id": "7",
-    "object_repr": "Into the Wild",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 12,
-  "fields": {
-    "action_time": "2026-04-28T20:56:26.971Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "slider"
-    ],
-    "object_id": "8",
-    "object_repr": "Blade Runner 2049",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 13,
-  "fields": {
-    "action_time": "2026-05-01T01:55:31.923Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "advertisement"
-    ],
-    "object_id": "1",
-    "object_repr": "Ad - Yes",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 14,
-  "fields": {
-    "action_time": "2026-05-01T01:56:36.070Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "advertisement"
-    ],
-    "object_id": "1",
-    "object_repr": "Ad - A",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Section\", \"Img src\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 15,
-  "fields": {
-    "action_time": "2026-05-01T01:57:55.873Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "advertisement"
-    ],
-    "object_id": "1",
-    "object_repr": "Ad - A",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 16,
-  "fields": {
-    "action_time": "2026-05-01T01:58:15.325Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "advertisement"
-    ],
-    "object_id": "2",
-    "object_repr": "Ad - B",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 17,
-  "fields": {
-    "action_time": "2026-05-01T02:04:04.654Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "advertisement"
-    ],
-    "object_id": "2",
-    "object_repr": "Ad - news",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Section\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 18,
-  "fields": {
-    "action_time": "2026-05-01T02:04:10.633Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "advertisement"
-    ],
-    "object_id": "1",
-    "object_repr": "Ad - news",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Section\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 19,
-  "fields": {
-    "action_time": "2026-05-01T02:05:05.604Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "advertisement"
-    ],
-    "object_id": "1",
-    "object_repr": "Ad - news",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 20,
-  "fields": {
-    "action_time": "2026-05-01T02:05:38.189Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "advertisement"
-    ],
-    "object_id": "2",
-    "object_repr": "Ad - b",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Section\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 21,
-  "fields": {
-    "action_time": "2026-05-01T02:05:52.630Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "advertisement"
-    ],
-    "object_id": "1",
-    "object_repr": "Ad - A",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Section\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 22,
-  "fields": {
-    "action_time": "2026-05-01T02:05:57.448Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "advertisement"
-    ],
-    "object_id": "2",
-    "object_repr": "Ad - news",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Section\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 23,
-  "fields": {
-    "action_time": "2026-05-01T02:09:29.655Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "sociallink"
-    ],
-    "object_id": "1",
-    "object_repr": "facebook",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 24,
-  "fields": {
-    "action_time": "2026-05-01T02:10:58.079Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "sociallink"
-    ],
-    "object_id": "1",
-    "object_repr": "Facebook",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Icon class\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 25,
-  "fields": {
-    "action_time": "2026-05-01T02:11:33.222Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "sociallink"
-    ],
-    "object_id": "2",
-    "object_repr": "Twitter",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 26,
-  "fields": {
-    "action_time": "2026-05-01T02:12:18.527Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "sociallink"
-    ],
-    "object_id": "3",
-    "object_repr": "Instagram",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 27,
-  "fields": {
-    "action_time": "2026-05-01T02:12:47.168Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "sociallink"
-    ],
-    "object_id": "4",
-    "object_repr": "YouTube",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 28,
-  "fields": {
-    "action_time": "2026-05-01T02:18:58.774Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "celebrity"
-    ],
-    "object_id": "1",
-    "object_repr": "Tom Cruise",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 29,
-  "fields": {
-    "action_time": "2026-05-01T02:19:55.245Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "celebrity"
-    ],
-    "object_id": "2",
-    "object_repr": "Pedro Pascal",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 30,
-  "fields": {
-    "action_time": "2026-05-01T02:20:21.692Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "celebrity"
-    ],
-    "object_id": "1",
-    "object_repr": "Tom Cruise",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Celebrity url\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 31,
-  "fields": {
-    "action_time": "2026-05-01T02:20:46.134Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "celebrity"
-    ],
-    "object_id": "1",
-    "object_repr": "Tom Cruise",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Celebrity url\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 32,
-  "fields": {
-    "action_time": "2026-05-01T02:21:19.773Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "celebrity"
-    ],
-    "object_id": "1",
-    "object_repr": "Tom Cruise",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Celebrity url\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 33,
-  "fields": {
-    "action_time": "2026-05-01T02:21:49.297Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "celebrity"
-    ],
-    "object_id": "1",
-    "object_repr": "Tom Cruise",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Celebrity url\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 34,
-  "fields": {
-    "action_time": "2026-05-01T02:22:19.591Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "celebrity"
-    ],
-    "object_id": "2",
-    "object_repr": "Pedro Pascal",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Celebrity url\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 35,
-  "fields": {
-    "action_time": "2026-05-01T02:23:32.110Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "celebrity"
-    ],
-    "object_id": "1",
-    "object_repr": "Tom Cruise",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Celebrity url\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 36,
-  "fields": {
-    "action_time": "2026-05-01T02:24:42.073Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "celebrity"
-    ],
-    "object_id": "1",
-    "object_repr": "Tom Cruise",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Celebrity url\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 37,
-  "fields": {
-    "action_time": "2026-05-01T02:26:34.835Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "celebrity"
-    ],
-    "object_id": "1",
-    "object_repr": "Tom Cruise",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Celebrity url\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 38,
-  "fields": {
-    "action_time": "2026-05-01T02:28:04.190Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "celebrity"
-    ],
-    "object_id": "2",
-    "object_repr": "Pedro Pascal",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Celebrity url\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 39,
-  "fields": {
-    "action_time": "2026-05-01T02:29:31.757Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "celebrity"
-    ],
-    "object_id": "3",
-    "object_repr": "Zendaya",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 40,
-  "fields": {
-    "action_time": "2026-05-01T02:30:22.545Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "celebrity"
-    ],
-    "object_id": "3",
-    "object_repr": "Zendaya",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Anchor url\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 41,
-  "fields": {
-    "action_time": "2026-05-01T02:30:35.251Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "celebrity"
-    ],
-    "object_id": "2",
-    "object_repr": "Pedro Pascal",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Anchor url\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 42,
-  "fields": {
-    "action_time": "2026-05-01T02:30:38.493Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "celebrity"
-    ],
-    "object_id": "3",
-    "object_repr": "Zendaya",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 43,
-  "fields": {
-    "action_time": "2026-05-01T02:30:40.498Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "celebrity"
-    ],
-    "object_id": "2",
-    "object_repr": "Pedro Pascal",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 44,
-  "fields": {
-    "action_time": "2026-05-01T02:30:48.268Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "celebrity"
-    ],
-    "object_id": "1",
-    "object_repr": "Tom Cruise",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Anchor url\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 45,
-  "fields": {
-    "action_time": "2026-05-02T17:38:53.237Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "trailer"
-    ],
-    "object_id": "1",
-    "object_repr": "Trailer 1",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 46,
-  "fields": {
-    "action_time": "2026-05-02T17:39:16.730Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "trailer"
-    ],
-    "object_id": "2",
-    "object_repr": "Trailer 2",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 47,
-  "fields": {
-    "action_time": "2026-05-02T17:45:17.425Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "tweet"
-    ],
-    "object_id": "3",
-    "object_repr": "Can't wait for the n",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 48,
-  "fields": {
-    "action_time": "2026-05-02T17:46:04.273Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "tweet"
-    ],
-    "object_id": "3",
-    "object_repr": "Can't wait for the n",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 49,
-  "fields": {
-    "action_time": "2026-05-02T17:46:23.257Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "tweet"
-    ],
-    "object_id": "4",
-    "object_repr": "Can't wait for the n",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 50,
-  "fields": {
-    "action_time": "2026-05-02T17:48:32.725Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "tweet"
-    ],
-    "object_id": "2",
-    "object_repr": "Invincible season 4 ",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 51,
-  "fields": {
-    "action_time": "2026-05-02T17:50:27.836Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "news"
-    ],
-    "object_id": "2",
-    "object_repr": "Michael Shannon Frontrunner to play Cable in “Deadpool 2”",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 52,
-  "fields": {
-    "action_time": "2026-05-02T17:52:31.262Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "news"
-    ],
-    "object_id": "3",
-    "object_repr": "Jensen Ackles reprises his role as Soldier Boy in the fifth season of \"The Boys\"",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Time\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 53,
-  "fields": {
-    "action_time": "2026-05-02T17:55:29.503Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "advertisement"
-    ],
-    "object_id": "1",
-    "object_repr": "Ad - sidebar",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Section\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 54,
-  "fields": {
-    "action_time": "2026-05-02T17:56:34.113Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "advertisement"
-    ],
-    "object_id": "1",
-    "object_repr": "Ad - sidebar",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 55,
-  "fields": {
-    "action_time": "2026-05-02T17:58:02.225Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "advertisement"
-    ],
-    "object_id": "1",
-    "object_repr": "Ad - sidebar",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Img src\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 56,
-  "fields": {
-    "action_time": "2026-05-02T17:58:33.947Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "advertisement"
-    ],
-    "object_id": "1",
-    "object_repr": "Ad - sidebar",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Img src\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 57,
-  "fields": {
-    "action_time": "2026-05-02T18:00:48.754Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "advertisement"
-    ],
-    "object_id": "1",
-    "object_repr": "Ad - sidebar",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Img width\", \"Img height\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 58,
-  "fields": {
-    "action_time": "2026-05-02T18:03:06.197Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "advertisement"
-    ],
-    "object_id": "1",
-    "object_repr": "Ad - sidebar",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Img src\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 59,
-  "fields": {
-    "action_time": "2026-05-02T18:04:22.057Z",
-    "user": [
-      "Slg4890"
-    ],
-    "content_type": [
-      "myapp",
-      "advertisement"
-    ],
-    "object_id": "1",
-    "object_repr": "Ad - sidebar",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Img src\"]}}]"
+    "type": "popular",
+    "img_src": "images/uploads/mv-it11.jpg",
+    "img_width": 185,
+    "img_height": 284,
+    "anchor_url": "#",
+    "movie_genre": "Overrated",
+    "movie_title": "Stranger Things",
+    "lower_rating": "7.4",
+    "upper_rating": "10"
   }
 }
 ]
