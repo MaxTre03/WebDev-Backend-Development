@@ -23,5 +23,5 @@ def home(request):
 
 
 
-def movie(request):
+def moviesingle(request):
     return render(request,"moviesingle.html")

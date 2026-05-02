@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     path("", views.home, name="home"),
-    path("moviesingle/",views.movie,name="movie")
+    path("moviesingle/",views.moviesingle,name="moviesingle")
 ]
